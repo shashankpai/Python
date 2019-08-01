@@ -1,0 +1,18 @@
+##list comp vs maps and filter
+
+##using list_comps
+
+symbols = '$#@@&^%$~*'
+
+ascii = [ord(s) for s in symbols]
+print(ascii)
+beyond_ascii = [ord(s) for s in symbols if ord(s) > 120]
+print(beyond_ascii)
+
+##using maps and filters
+
+symbols = '$#@@&^%$~*'
+
+beyond_mf_ascii = list(filter(lambda c:c > 90 , map(ord,symbols)))
+
+print(beyond_mf_ascii)
