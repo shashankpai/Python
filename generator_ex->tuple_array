@@ -1,0 +1,12 @@
+##Initializing a tuple and an array from a generator expression
+
+symbols = '$¢£¥€¤'
+
+tuple_ex = tuple(ord(symbol) for symbol in symbols)
+print(tuple_ex)
+
+import array
+
+symbols = '$¢£¥€¤'
+array_ex = array.array('I', (ord(symbol) for symbol in symbols))
+print(array_ex)
