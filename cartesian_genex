@@ -1,0 +1,8 @@
+###Cartesian product in a generator expression
+
+colors = ['black', 'white']
+
+sizes = ['S','M','L']
+
+for tshirt in ('{0} {1}'.format(c,s) for c in colors for s in sizes):
+    print(tshirt)
