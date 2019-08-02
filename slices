@@ -1,0 +1,21 @@
+#Assigning to slices
+
+l = list(range(10))
+
+print(l)
+
+l[2:4] = [20,30]
+print(l)
+
+del l[5:7]
+print(l)
+
+l[2:5] = [30,50]
+print(l)
+
+l[3:6] = [70,90]
+print(l)
+
+l[2:5] = [100]
+
+print(l)
