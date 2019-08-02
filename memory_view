@@ -1,0 +1,16 @@
+## The built-in memorview class is a shared-memory sequence type that lets you handle
+## slices of arrays without copying bytes
+
+import array
+numbers = array.array('h',[-2,-1,0,1,2])
+print(numbers)
+memv = memoryview(numbers)
+print(memv)
+print(len(memv))
+print(memv[0])
+memv_oct = memv.cast('B')
+print(memv_oct)
+print(numbers)
+print(memv_oct.tolist())
+memv_oct[5] = 3
+print(numbers)
